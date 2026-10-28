@@ -331,8 +331,13 @@ export default function Sections({ brand, email, product, categories, variants, 
           <p className="mt-3 text-[13px] text-white/55">{sent ? "Thanks, you are on the list." : "New colourways and restocks, nothing else."}</p>
         </div>
         <div className="flex flex-wrap justify-between gap-3 border-t border-white/10 pt-7 text-[13px] text-white/50 lg:col-span-3">
-          <span>© 2026 {brand}</span>
-          <span>Made in Nigeria</span>
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-5">
+            <span>© 2026 {brand}</span>
+            <span>Made in Aba</span>
+            <span className="footer-credit" aria-label="Powered by ZiTechurity">
+              <span aria-hidden="true">POWERED BY ZITECHURITY</span>
+            </span>
+          </div>
         </div>
       </footer>
     </>
